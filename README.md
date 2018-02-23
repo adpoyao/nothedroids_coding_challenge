@@ -7,7 +7,7 @@
 
 ### FRONT-END TECHNOLOGIES:
 * JavaScript
-* CSS & Sass
+* CSS
 * HTML
 * React/Redux/Redux Form
 
