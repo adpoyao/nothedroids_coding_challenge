@@ -39,6 +39,8 @@ export class LoginForm extends React.Component {
 
         <fieldset className="login-box">
             <legend>Log In</legend>
+            <h4>Please enter your login information.</h4>
+            <div className="indent"></div>
             <div className='fields-container'>
               <label htmlFor="email"></label>
               <Field

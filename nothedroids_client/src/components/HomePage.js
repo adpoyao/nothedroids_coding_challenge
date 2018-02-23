@@ -20,6 +20,7 @@ export class HomePage extends Component {
             <h2 className="heading-2">You must be {currentUser.firstName}.</h2>
             <h3>Full name {currentUser.firstName} {currentUser.lastName} to be exact.</h3>
             <h3>Email: {this.props.currentUser.email}.</h3>
+            <div className="indent"></div>
           </div>
           <img className="background-img-laptop" src="https://dktovmf07nr2a.cloudfront.net/theme_assets/F11CB864-C7C3-4540-B0F7-AEC827E4E360/assets/images/apple-cinema-display-26fd7187fa.jpg" alt="laptop background"></img>
         </div>

@@ -43,11 +43,25 @@ export class RegistrationForm extends React.Component {
 
         <fieldset className="registration-box">
           <legend>Sign Up</legend>
+          <h4>Please enter your registration information.</h4>
+          <div className="indent"></div>
         <div className='fields-container-2'>
           <label htmlFor="firstName"></label>
-          <Field component={Input} type="text" name="firstName" placeholder="first name"/>
+          <Field 
+            component={Input} 
+            type="text" 
+            name="firstName" 
+            placeholder="first name"
+            validate={[required, nonEmpty, isTrimmed]}
+            />
           <label htmlFor="lastName"></label>
-          <Field component={Input} type="text" name="lastName" placeholder="last name"/>
+          <Field 
+            component={Input} 
+            type="text" 
+            name="lastName" 
+            placeholder="last name" 
+            validate={[required, nonEmpty, isTrimmed]}
+            />
           <label htmlFor="email"></label>
           <Field
             component={Input}
