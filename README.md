@@ -1,7 +1,7 @@
 # NOT THE DROIDS
 
 ## WIREFRAME
-*See Attached*
+<img src='http://res.cloudinary.com/adpoyao/image/upload/c_scale,h_860/v1519373422/Code%20Challenges/NTD_mock_up.png' alt='app wireframe'>
 
 ## TECHNOLOGY STACK
 
