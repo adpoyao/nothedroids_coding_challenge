@@ -8,6 +8,7 @@ import Input from './Input';
 import { login } from '../actions/auth';
 import { registerUser } from '../actions/users';
 import {required, nonEmpty, matches, length, isTrimmed} from '../validators';
+import './RegistrationForm.css';
 
 export class RegistrationForm extends React.Component {
   onSubmit(values) {
@@ -21,15 +22,6 @@ export class RegistrationForm extends React.Component {
   render() {
     if (this.props.loggedIn) {
       return <Redirect to="/home" />;
-    }
-
-    let successMessage;
-    if (this.props.submitSucceeded) {
-      successMessage = (
-        <div className="signup sigup-success">
-          Signed up successfully
-        </div>
-      );
     }
 
     let errorMessage;
@@ -47,7 +39,6 @@ export class RegistrationForm extends React.Component {
             this.onSubmit(values)
         )}>
 
-        {successMessage}
         {errorMessage}
 
         <fieldset className="registration-box">
@@ -82,7 +73,7 @@ export class RegistrationForm extends React.Component {
             validate={[required, nonEmpty, matches('password')]}
           />
           <button
-              className="sign"
+              className="signup-button"
               type="submit"
               disabled={this.props.pristine || this.props.submitting}>
               Sign Up

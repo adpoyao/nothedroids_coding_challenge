@@ -1,0 +1,39 @@
+.wrap {
+  margin: 28px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.menu-button{
+  
+  margin: 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.menu-items:hover {
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 2px solid rgb(231, 143, 63);
+}
+
+@media all and (max-width: 1060px) {
+  .wrap {
+    margin: 28px 3%;
+  }
+  .logo {
+    max-height: 40px;
+  }
+}

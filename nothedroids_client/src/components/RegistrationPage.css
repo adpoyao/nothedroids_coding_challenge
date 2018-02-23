@@ -1,0 +1,41 @@
+.login-wrapper,
+.register-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.background-img-nightsky {
+  position: relative;
+  max-width: 100%;
+  min-width: 1060px;
+  margin: 0 auto;
+}
+
+.signup-button,
+.login-button {
+  background-color: #fff;
+  color: #111;
+  padding: 16px 36px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px;
+  transition: 0.2s all ease;
+  border: none;
+}
+
+.signup-button:hover,
+.login-button:hover {
+  background-color: rgb(231, 143, 63);
+  border: none;
+}
+
+@media all and (max-width: 1060px) {
+  .background-img-nightsky {
+    left: 50%;
+    transform: translate(-50%, 0)
+  }
+}

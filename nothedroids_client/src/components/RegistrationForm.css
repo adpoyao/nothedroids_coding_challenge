@@ -1,0 +1,29 @@
+form {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 20vh;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 42px;
+  font-size: 32px;
+  margin: 0;
+}
+
+.form-error,
+.signup-error,
+.login-error {
+  color: white;
+  font-size: 15px;
+  line-height: 24px;
+}
